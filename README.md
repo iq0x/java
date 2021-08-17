@@ -1,2 +1,2 @@
 # java
-java from school
+java coding from school
