@@ -3,7 +3,8 @@ public class Main
 {
        public static void main (String[] args)
        {
-             double gewicht = 1;
+             double gewicht = 12;
+             double preis = 0;
 
              System.out.println("versandkosten");
              if (gewicht <= 0)
@@ -13,7 +14,6 @@ public class Main
              else
              {
 
-
              if (gewicht > 20)
              {
                  System.out.println("paket kann nicht versendet werdeN!");
@@ -22,18 +22,19 @@ public class Main
              {
                 if (gewicht >= 5 && gewicht <= 10)
                 {
-                   System.out.println("10,50Euro");
+                   preis = 10.50;
                 }
 
                 else if (gewicht > 10 && gewicht < 20)
                 {
-                   System.out.println("14Euro");
+                   preis = 14;
                 }
                 else
                 {
-                  System.out.println("7Euro");
+                  preis = 7;
                 }
              }
+               System.out.println(preis);
            }
 
 
