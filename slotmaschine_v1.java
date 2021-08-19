@@ -18,7 +18,7 @@ public class slotmaschine
       int field2 = rand.nextInt(3);
       int field3 = rand.nextInt(3);
 
-      System.out.println(field1 + " " + field2 + " " + field2);
+      System.out.println(field1 + " " + field2 + " " + field3);
 
       if (field1 == 1 && field2 == 1 && field3 == 1)
       {
