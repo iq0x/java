@@ -5,12 +5,12 @@ public class Main
        {
             String nachname = "Dom";
             String vorname = "helmut";
-            String titel = "dr";
+            String titel = "";
             int alter = 29;
             char geschlecht = 'm';
 
             System.out.println("anrede");
-
+            
               if (alter < 18)
               {
                   System.out.println("hello" + vorname);
