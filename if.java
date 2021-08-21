@@ -1,7 +1,3 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Random;
-
 public class Main
 {
       int a = 0, b = 90;
