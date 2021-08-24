@@ -15,11 +15,11 @@ public class Main
                   System.out.print(G);
                   count++;
                   if (G == 'Ä' || G == 'ä')
-					umlauteA++;
-				  if (G == 'ü' || G == 'Ü')
-					umlauteU++;
-				   if (G == 'Ö' || G == 'ö')
-					umlauteO++;
+			umlauteA++;
+		  if (G == 'ü' || G == 'Ü')
+			umlauteU++;
+		  if (G == 'Ö' || G == 'ö')
+			umlauteO++;
             }
             System.out.println();
             System.out.println("umlauteA: "+ umlauteA);
@@ -27,3 +27,4 @@ public class Main
             System.out.println("umlauteO: "+ umlauteO);
        }
 }
+
