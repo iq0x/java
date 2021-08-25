@@ -1,19 +1,16 @@
+
 public class Main
 {
        public static void main (String[] args)
        {
-            String text = "k.otto otto otto otto.lk";
+            String text = "oTto otto.";
             String tmp = "";
-            String result = text.replaceAll("[^a-zA-Z0-9]","");
+            String result = text.replaceAll("[^a-zA-Z0-9]","").toLowerCase();
             int length = result.length();
             String prefix;
 
- 
-
             for (int i = length - 1; i >= 0; i--)
               tmp = tmp + result.charAt(i);
-
- 
 
             if (result.equals(tmp))
                prefix = " ist ein palindrom";
@@ -23,7 +20,3 @@ public class Main
           System.out.println(result + prefix);
        }
 }
-
-
-
-
