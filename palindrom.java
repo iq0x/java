@@ -8,12 +8,8 @@ public class Main
             int length = result.length();
             String prefix;
 
- 
-
             for (int i = length - 1; i >= 0; i--)
               tmp = tmp + result.charAt(i);
-
- 
 
             if (result.equals(tmp))
                prefix = "ist ein palindrom";
