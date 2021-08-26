@@ -30,10 +30,7 @@ public class Main
 					System.out.println("dezimal: " + dez);
 					
 				}
-				else
-				{
-					System.out.println("das ist keine binärzahl!");
-				}
+				else System.out.println("das ist keine binärzahl!");
 			}
 			
 			if(zahl.contains("-b"))
@@ -51,10 +48,7 @@ public class Main
 					}
 					System.out.println();
 				}
-				else
-				{
-					System.out.println("das ist keine dezimalzahl!");
-				}
+				else System.out.println("das ist keine dezimalzahl!");
 			}
 			
 			if(zahl.contains("-help"))
@@ -62,9 +56,6 @@ public class Main
 				System.out.println("lol dir ist nicht zu helfen xDDD");
 			}
 		}
-		else
-			System.out.println("unbekannter befehl");
+		else System.out.println("unbekannter befehl");
 	}
 }
-
-
