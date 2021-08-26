@@ -13,7 +13,7 @@ public class Main
 
 		String zahl = blub.nextLine();		
 		
-		if(zahl != "0")
+		if(!zahl.isEmpty())
 		{
 			if(zahl.contains("-b"))
 			{
@@ -47,6 +47,7 @@ public class Main
 			}
 		}
 		else
-			System.out.println("sowieso 0");
+			System.out.println("unbekannter befehl");
 	}
 }
+
