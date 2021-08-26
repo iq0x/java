@@ -37,7 +37,7 @@ public class Main
 			{
 				
 				zahl = zahl.replace("-b", ""); 
-				if (zahl.matches("[0-1]+"))
+				if (zahl.matches("[0-9]+"))
 				{
 					Integer input = Integer.valueOf(zahl);
 					System.out.print("binär: ");
@@ -56,6 +56,8 @@ public class Main
 				System.out.println("lol dir ist nicht zu helfen xDDD");
 			}
 		}
-		else System.out.println("unbekannter befehl");
+		else
+			System.out.println("unbekannter befehl");
 	}
 }
+
