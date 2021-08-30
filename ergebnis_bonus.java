@@ -29,36 +29,36 @@ public class Main
 			
 			
 			for (int tab1 = 0; tab1 <= 41; tab1++)
-				{	
-					if (tab1 == 0)	
-						System.out.print("\u2554");
-					if (tab1 == 42)	
-						System.out.print("\u2557");
-					if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)
-						System.out.print("\u2566");
-						
-					System.out.print("\u2550");
+			{	
+				if (tab1 == 0)	
+					System.out.print("\u2554");
+				if (tab1 == 42)	
+					System.out.print("\u2557");
+				if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)
+					System.out.print("\u2566");
 					
-				}
-				System.out.print("\u2557");
-				System.out.println();
-				System.out.println("\u2551"+ 1+ "\t" +"\u2551"+ 2 +"\t"+"\u2551"+ +3+"\t"+"\u2551"+ +4+"\t"+"\u2551"+ +5+"\t"+"\u2551" +6+"\t"+"\u2551");
+				System.out.print("\u2550");
+				
+			}
+			System.out.print("\u2557");
+			System.out.println();
+			System.out.println("\u2551"+ 1+ "\t" +"\u2551"+ 2 +"\t"+"\u2551"+ +3+"\t"+"\u2551"+ +4+"\t"+"\u2551"+ +5+"\t"+"\u2551" +6+"\t"+"\u2551");
 				
 			
-				for (int tab1 = 0; tab1 <= 41; tab1++)
-				{	
-					if (tab1 == 0)	
-						System.out.print("\u2560");
-					if (tab1 == 42)	
-						System.out.print("\u2563");
-					if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)
-						System.out.print("\u256C");
+			for (int tab1 = 0; tab1 <= 41; tab1++)
+			{	
+				if (tab1 == 0)	
+					System.out.print("\u2560");
+				if (tab1 == 42)	
+					System.out.print("\u2563");
+				if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)
+					System.out.print("\u256C");
 						
-					System.out.print("\u2550");
+				System.out.print("\u2550");
 					
-				}
-				System.out.print("\u2563");
-				System.out.println();
+			}
+			System.out.print("\u2563");
+			System.out.println();
 				
 			int noten[] = {note1, note2, note3, note4, note5, note6};	
 			
@@ -74,21 +74,21 @@ public class Main
 			
 	
 			for (int tab1 = 0; tab1 <= 41; tab1++)
-				{	
-					if (tab1 == 0)	
-						System.out.print("\u255A");
-					if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)	
-						System.out.print("\u2569");
-					if (tab1 == 42)	
-						System.out.print("\u255D");
+			{	
+				if (tab1 == 0)	
+					System.out.print("\u255A");
+				if (tab1 == 7 || tab1 == 14 || tab1 == 21 || tab1 == 28 || tab1 == 35)	
+					System.out.print("\u2569");
+				if (tab1 == 42)	
+					System.out.print("\u255D");
 						
-					System.out.print("\u2550");
+				System.out.print("\u2550");
 		
-				}
-				System.out.print("\u255D");
-				System.out.println();
-				System.out.println("duchscnitt: "+durch/punkte.length+" Pkt");
-				System.out.println();
+			}
+			System.out.print("\u255D");
+			System.out.println();
+			System.out.println("duchscnitt: "+durch/punkte.length+" Pkt");
+			System.out.println();
 				
        }
 }
