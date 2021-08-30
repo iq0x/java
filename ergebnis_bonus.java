@@ -14,13 +14,13 @@ public class Main
 		
 			for(int i = 1; i < punkte.length; i++)
 			{
-				System.out.println(punkte[i]);
-				if (punkte[i] >= 92 && punkte[i] <= 100) { note1++; System.out.println("added....");}
-				if (punkte[i] >= 81 && punkte[i] <= 91) { note2++; System.out.println("added....");}
-				if (punkte[i] >= 67 && punkte[i] <= 80) { note3++; System.out.println("added....");}
-				if (punkte[i] >= 50 && punkte[i] <= 66) { note4++; System.out.println("added....");}
-				if (punkte[i] >= 30 && punkte[i] <= 49) { note5++; System.out.println("added....");}
-				if (punkte[i] >= 0 && punkte[i] <= 29) { note6++; System.out.println("added....");}
+				//System.out.println(punkte[i]);
+				if (punkte[i] >= 92 && punkte[i] <= 100) { note1++;}
+				if (punkte[i] >= 81 && punkte[i] <= 91) { note2++;}
+				if (punkte[i] >= 67 && punkte[i] <= 80) { note3++;}
+				if (punkte[i] >= 50 && punkte[i] <= 66) { note4++;}
+				if (punkte[i] >= 30 && punkte[i] <= 49) { note5++;}
+				if (punkte[i] >= 0 && punkte[i] <= 29) { note6++;}
 				durch += punkte[i];
 			}	
 			
@@ -28,7 +28,7 @@ public class Main
 			System.out.println();
 			
 			
-			for (int tab1 = 0; tab1 <= 42; tab1++)
+			for (int tab1 = 0; tab1 <= 41; tab1++)
 				{	
 					if (tab1 == 0)	
 						System.out.print("\u2554");
@@ -40,13 +40,12 @@ public class Main
 					System.out.print("\u2550");
 					
 				}
+				System.out.print("\u2557");
 				System.out.println();
-			   System.out.println("\u2551"+ 1+ "\t" +"\u2551"+ 2 +"\t"+"\u2551"+ +3+"\t"+"\u2551"+ +4+"\t"+"\u2551"+ +5+"\t"+"\u2551" +6+"\t"+"\u2551");
-			
-			
+				System.out.println("\u2551"+ 1+ "\t" +"\u2551"+ 2 +"\t"+"\u2551"+ +3+"\t"+"\u2551"+ +4+"\t"+"\u2551"+ +5+"\t"+"\u2551" +6+"\t"+"\u2551");
 				
 			
-				for (int tab1 = 0; tab1 <= 42; tab1++)
+				for (int tab1 = 0; tab1 <= 41; tab1++)
 				{	
 					if (tab1 == 0)	
 						System.out.print("\u2560");
@@ -58,6 +57,7 @@ public class Main
 					System.out.print("\u2550");
 					
 				}
+				System.out.print("\u2563");
 				System.out.println();
 				
 			int noten[] = {note1, note2, note3, note4, note5, note6};	
@@ -73,7 +73,7 @@ public class Main
 			System.out.println();
 			
 	
-			for (int tab1 = 0; tab1 <= 42; tab1++)
+			for (int tab1 = 0; tab1 <= 41; tab1++)
 				{	
 					if (tab1 == 0)	
 						System.out.print("\u255A");
@@ -85,9 +85,11 @@ public class Main
 					System.out.print("\u2550");
 		
 				}
+				System.out.print("\u255D");
 				System.out.println();
-				System.out.println("duchscnitt: "+durch/punkte.length);
+				System.out.println("duchscnitt: "+durch/punkte.length+" Pkt");
 				System.out.println();
 				
        }
 }
+
