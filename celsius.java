@@ -11,22 +11,22 @@ public class celsiusfahrenheit
     
  //-------------------------------------------------------------------   
  
-    static double celsius(double zahl) 
+    static double celsius(double x) 
     {
-        double ergebnis = ((zahl-32) * 5/9);
-        return ergebnis;
+        double result = ((x-32) * 5/9);
+        return result;
     }
     
     
-    static double fahrenheit(double zahl) 
+    static double fahrenheit(double x) 
     {
-        double ergebnis = zahl * 9 / 5 + 32;
-        return ergebnis;
+        double result = x * 9 / 5 + 32;
+        return result;
     }
     
     
-	static void display(double zahl, String einheit) 
+	static void display(double x, String einheit) 
     {
-        System.out.printf("%.1f %s%n", zahl, einheit);
+        System.out.printf("%.1f %s%n", x, einheit);
     }
 }
