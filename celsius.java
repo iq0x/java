@@ -2,9 +2,11 @@ public class celsiusfahrenheit
 {
 	public static void main(String[] args)
     {
-   
-        display(fahrenheit(6.0), "F");   
-        display(celsius(53.5), "Grad");
+        double celsius = 6.0;   
+        double fahrenheit = 53.5;
+          
+        display(fahrenheit(celsius), "F");
+        display(celsius(fahrenheit), "Grad");
     }    
     
  //-------------------------------------------------------------------   
@@ -28,4 +30,5 @@ public class celsiusfahrenheit
         System.out.printf("%.1f %s%n", x, einheit);
     }
 }
+
 
