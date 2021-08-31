@@ -13,7 +13,14 @@ public class Main
 				while (j < zahlen[i])
 				{
 					j++;
-					System.out.print("X");
+					if (zahlen[i] % 2 == 0)
+					{
+						System.out.print("\u2588");
+					}
+					else
+						System.out.print("-");
+					
+					try{Thread.sleep(5);}catch(InterruptedException e){System.out.println(e);}
 				}
 				System.out.print(" "+zahlen[i] +"%");
 				System.out.println();
@@ -21,3 +28,4 @@ public class Main
 			
        }
 }
+
