@@ -1,19 +1,15 @@
 public class celsiusfahrenheit 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args)
     {
-        double a = 12.0;
+        double celsius = 6.0;    
+        display(fahrenheit(celsius), "F");
         
-        double b = fahrenheit(a);       
-        myprint(b,"F");
-        
-        a = 53.5;
-        
-		b = celsius(a);
-        myprint(b, "Grad");
+        double fahrenheit = 53.5;
+        display(celsius(fahrenheit), "Grad");
     }    
     
- //-------------------------------------------------------   
+ //-------------------------------------------------------------------   
  
     static double celsius(double zahl) 
     {
@@ -29,7 +25,7 @@ public class celsiusfahrenheit
     }
     
     
-	static void myprint(double zahl, String einheit) 
+	static void display(double zahl, String einheit) 
     {
         System.out.printf("%.1f %s%n", zahl, einheit);
     }
