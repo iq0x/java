@@ -5,14 +5,18 @@ public class Main
 	
 	public static void main (String[] args)
 	{
-		int[] slots;
 		int versuche = 100000;
 		int MAX = 9;
+		int GAMEOVER = 0;
+		int wait = 200;
+		
+		int[] slots;
 		slots = new int[MAX];
+		
 				  
-		while (versuche > 0)
+		while (versuche > GAMEOVER)
 		{
-			try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
+			try{Thread.sleep(wait);}catch(InterruptedException e){System.out.println(e);}
 			versuche--;
 			System.out.print("\033[H\033[2J"); 
 			System.out.flush();  
