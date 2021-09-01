@@ -16,7 +16,7 @@ public class Main
 		System.out.print("ARRAYS:\t"); 
 		display(NVALUE(array));
     }
-       
+
 //-----------------------------------------------------------------
 
 	static int NVALUE(int[] array) 
@@ -31,8 +31,7 @@ public class Main
 		mittelwert = SUMME(array)/ array.length;
 		return mittelwert;	
     }
-    
-    
+
 	static int SUMME(int[] array) 
 	{
 		int summe = 0;
@@ -43,8 +42,7 @@ public class Main
 		}
 		return summe;
     }
-    
-    
+
 	static int MIN(int[] array) 
 	{
 		int min = array[0];
@@ -59,8 +57,7 @@ public class Main
 		}
 		return min;	
     }
-    
-    
+
     static int MAX(int[] array) 
 	{
 		int max = array[0];
@@ -75,12 +72,10 @@ public class Main
 		}
 		return max;	
     }
-    
-    
-    static void display(int zahl) 
-    {
-		System.out.println(zahl);
 
+    static void display(int zahl)
+    {
+	System.out.println(zahl);
     }
     
     
