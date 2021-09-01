@@ -11,17 +11,17 @@ public class Main{
         
         int[] notenNEW = sort(punkte, noten);
         
-		Notenspiegel(notenNEW);
+	Notenspiegel(notenNEW);
 		
-		display(mittelwertPunkte(punkte));
-		display(mittelwertNoten(notenNEW));
+	display(mittelwertPunkte(punkte));
+	display(mittelwertNoten(notenNEW));
 		
-		legende(notenNEW);
+	legende(notenNEW);
     }
 
 //--------------------------------------------------------------------
 
-	static void display(int x) 
+static void display(int x) 
 	{
         System.out.println(x);
     }
