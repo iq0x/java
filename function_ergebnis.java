@@ -11,12 +11,12 @@ public class Main{
         
         int[] notenNEW = sort(punkte, noten);
         
-	Notenspiegel(notenNEW);
+		Notenspiegel(notenNEW);
 		
-	display(mittelwertPunkte(punkte));
-	display(mittelwertNoten(notenNEW));
+		display(mittelwertPunkte(punkte));
+		display(mittelwertNoten(notenNEW));
 		
-	legende(notenNEW);
+		legende(notenNEW);
     }
 
 //--------------------------------------------------------------------
@@ -84,30 +84,30 @@ static void display(int x)
 	}
 	
 	
-	static void Notenspiegel(int [] noten) 
+	static void Notenspiegel(int [] notenNEW) 
 	{
 		System.out.println("\n1\t2\t3\t4\t5\t6");
 		System.out.println("-------------------------------------------");
-		System.out.println(noten[0]+"\t"+noten[1]+"\t"+noten[2]+"\t"+noten[3]+"\t"+noten[4]+"\t"+ noten[5] );
+		System.out.println(notenNEW[0]+"\t"+notenNEW[1]+"\t"+notenNEW[2]+"\t"+notenNEW[3]+"\t"+notenNEW[4]+"\t"+ notenNEW[5] );
 	}
 	
 	
-	static void legende(int [] noten)
+	static void legende(int [] notenNEW)
 	{
 		System.out.println("\n----------------------------------------------------------");
 		System.out.println("|Prozent\t|Note\t|Bewertung \t\t|Vorkommen ");
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|100-92\t\t|1\t|sehr gut \t\t|"+noten[0]);
+		System.out.println("|100-92\t\t|1\t|sehr gut \t\t|"+notenNEW[0]);
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|91-81\t\t|2\t|gut \t\t\t|"+noten[1]);
+		System.out.println("|91-81\t\t|2\t|gut \t\t\t|"+notenNEW[1]);
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|80-67\t\t|3\t|befriedigendt \t\t|"+noten[2]);
+		System.out.println("|80-67\t\t|3\t|befriedigendt \t\t|"+notenNEW[2]);
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|66-50\t\t|4\t|ausreichendt \t\t|"+noten[3]);
+		System.out.println("|66-50\t\t|4\t|ausreichendt \t\t|"+notenNEW[3]);
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|49-30\t\t|5\t|mangelhaft \t\t|"+noten[4]);
+		System.out.println("|49-30\t\t|5\t|mangelhaft \t\t|"+notenNEW[4]);
 		System.out.println("|----------------------------------------------------------");
-		System.out.println("|29-0\t\t|6\t|ungenügendt \t\t|"+noten[5]);
+		System.out.println("|29-0\t\t|6\t|ungenügendt \t\t|"+notenNEW[5]);
 	}
 	
 	static void clrscr()
