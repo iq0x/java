@@ -77,7 +77,7 @@ public class Main
 		
 		buffer:
 			for (int i = 0; i < 6; i++) {
-				tmp = (int) (Math.random() * 50); 
+				tmp = (int) (Math.random() * 49)+1; 
 				if(tmp == 0) {
 					continue buffer;
 				}   
