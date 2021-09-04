@@ -1,12 +1,21 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Main{
-
+public class Main
+{
+		static String text0 = "nichts";
+		static String text1 = "1 Dollar";
+		static String text2 = "5 Dollar";
+		static String text3 = "50.000 DOLLAR";
+		static String text4 = "100.000 Dollar";
+		static String text5 = "500.000 Dollar";
+		static String text6 = "1.000.000";
+		
 	public static void main(String[] arg) 
 	{
 		int[] meinezahlen = {2, 8, 12, 17, 22, 35};
 		int[] gewinnzahlen = new int[6]; 
+		
 		clrscr();
 		System.out.print("Meine Zahlen: ");
 		display(meinezahlen);
@@ -29,13 +38,13 @@ public class Main{
     static void meingewinn(int richtige)
 	{
 		String gewinntext = ""; 
-		if (richtige == 0) gewinntext = "nichts";
-		if (richtige == 1) gewinntext = "1 Dollar";
-		if (richtige == 2) gewinntext = "5 Dollar";
-		if (richtige == 3) gewinntext = "50.000 DOLLAR";
-		if (richtige == 4) gewinntext = "100.000 Dollar";
-		if (richtige == 5) gewinntext = "500.000 Dollar";
-		if (richtige == 6) gewinntext = "1.000.000 Dollar";
+		if (richtige == 0) gewinntext = text0;
+		if (richtige == 1) gewinntext = text1;
+		if (richtige == 2) gewinntext = text2;
+		if (richtige == 3) gewinntext = text3;
+		if (richtige == 4) gewinntext = text4;
+		if (richtige == 5) gewinntext = text5;
+		if (richtige == 6) gewinntext = text6;
 		
 		System.out.println("\nDu hast "+gewinntext+" gewonnen\n");
 	}
@@ -64,23 +73,22 @@ public class Main{
 	static int [] ziehung(int [] gewinnzahlen)
 	{
 	
-		int randomNum;
+		int tmp;
 		
-		go:
+		buffer:
 			for (int i = 0; i < 6; i++) {
-				randomNum = (int) (Math.random() * 50); 
-				if(randomNum == 0) {
-					continue go;
+				tmp = (int) (Math.random() * 50); 
+				if(tmp == 0) {
+					continue buffer;
 				}   
 				for (int x = 0; x < i; x++) {
-					if (gewinnzahlen[x] == randomNum ) 
+					if (gewinnzahlen[x] == tmp ) 
 					{
-						randomNum = (int) (Math.random() * 50);
+						tmp = (int) (Math.random() * 50);
 						x = -1;
 					}
-
 				}
-				gewinnzahlen[i] = randomNum;
+				gewinnzahlen[i] = tmp;
 			}
         return gewinnzahlen;
 	}
@@ -89,13 +97,13 @@ public class Main{
 	static void gewinne()
 	{
 		System.out.println("\n=================================");
-		System.out.println("Richtige: 0 = NICHTS lol");
-		System.out.println("Richtige: 1 = 1 DOLLAR");
-		System.out.println("Richtige: 2 = 5 DOLLAR");
-		System.out.println("Richtige: 3 = 50.000 DOLLAR");
-		System.out.println("Richtige: 4 = 100.000 DOLLAR");
-		System.out.println("Richtige: 5 = 200.000 DOLLAR");
-		System.out.println("Richtige: 6 = 1.000.000 DOLLAR");
+		System.out.println("Richtige: 0 = "+text0);
+		System.out.println("Richtige: 1 = "+text1);
+		System.out.println("Richtige: 2 = "+text2);
+		System.out.println("Richtige: 3 = "+text3);
+		System.out.println("Richtige: 4 = "+text4);
+		System.out.println("Richtige: 5 = "+text5);
+		System.out.println("Richtige: 6 = "+text6);
 		System.out.println("=================================");
 	}
 	
