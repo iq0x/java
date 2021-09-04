@@ -31,7 +31,7 @@ public class Main
 			System.out.println(check(meinezahlen, gewinnzahlen));
 			
 			int richtige = check(meinezahlen, gewinnzahlen);
-			a
+		
 			gewinne();
 			
 			meingewinn(richtige);
