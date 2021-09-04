@@ -1,36 +1,49 @@
 import java.util.Arrays;
 import java.util.Random;
 
+
 public class Main
 {
-		static String text0 = "nichts";
-		static String text1 = "1 Dollar";
-		static String text2 = "5 Dollar";
-		static String text3 = "50.000 DOLLAR";
-		static String text4 = "100.000 Dollar";
-		static String text5 = "500.000 Dollar";
-		static String text6 = "1.000.000";
+	static String text0 = "nichts";
+	static String text1 = "1 Dollar";
+	static String text2 = "5 Dollar";
+	static String text3 = "50.000 DOLLAR";
+	static String text4 = "100.000 Dollar";
+	static String text5 = "500.000 Dollar";
+	static String text6 = "1.000.000";
 		
 	public static void main(String[] arg) 
 	{
-		int[] meinezahlen = {2, 8, 12, 17, 22, 35};
-		int[] gewinnzahlen = new int[6]; 
-		
-		clrscr();
-		System.out.print("Meine Zahlen: ");
-		display(meinezahlen);
-		
-		System.out.print("Gewinnzahlen: ");
-		display(ziehung(gewinnzahlen));
-		
-		System.out.print("\nRichtige: ");
-		System.out.println(check(meinezahlen, gewinnzahlen));
-		
-		int richtige = check(meinezahlen, gewinnzahlen);
-		
-		gewinne();
-		
-		meingewinn(richtige);
+		while ( true )
+		{
+			clrscr();
+			int[] meinezahlen = {2, 8, 12, 17, 22, 35};
+			int[] gewinnzahlen = new int[6]; 
+			
+			
+			System.out.print("Meine Zahlen: ");
+			display(meinezahlen);
+			
+			System.out.print("Gewinnzahlen: ");
+			display(ziehung(gewinnzahlen));
+			
+			System.out.print("\nRichtige: ");
+			System.out.println(check(meinezahlen, gewinnzahlen));
+			
+			int richtige = check(meinezahlen, gewinnzahlen);
+			a
+			gewinne();
+			
+			meingewinn(richtige);
+			try
+			{
+				Thread.sleep(1000);
+			}
+			catch(InterruptedException ex)
+			{
+				Thread.currentThread().interrupt();
+			}
+		}
 	}
 
 
@@ -74,13 +87,9 @@ public class Main
 	{
 	
 		int tmp;
-		
-		buffer:
+	
 			for (int i = 0; i < 6; i++) {
-				tmp = (int) (Math.random() * 49)+1; 
-				if(tmp == 0) {
-					continue buffer;
-				}   
+				tmp = (int) (Math.random() * 49)+1;   
 				for (int x = 0; x < i; x++) {
 					if (gewinnzahlen[x] == tmp ) 
 					{
